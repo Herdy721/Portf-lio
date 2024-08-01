@@ -1,0 +1,42 @@
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2em 5em;
+}
+
+.container-titulo {
+    text-decoration: none;
+    color: var(--cor-3); 
+    font-family: var(--fonte-4);
+    transform: translateX(-100%); /* Imagem fora da tela à esquerda */
+    animation: slideInFromLeft 1s forwards; /* Animação de entrada */
+    animation-delay: 1s;/* Delay de 2 segundos */
+    opacity: 0; /* Imagem transparente no início */
+ }
+ 
+ @keyframes slideInFromLeft {
+   to {
+     opacity: 1; /* Imagem totalmente visível no final */
+     transform: translateX(0); /* Imagem na posição final */
+   }
+ }
+
+.container-menu__link{
+    text-decoration: none;
+    color: var(--cor-3);
+    font-family: var(--fonte-1);
+    padding: 0 1em;
+    font-weight: 500;
+}
+
+.container-menu__link:hover {
+    color: var(--cor-4);
+    border-bottom: 2px solid var(--cor-4);
+    transition: 0.3s;
+}
+
+.container__titulo__negrito:hover {
+    color: var(--cor-4);
+}
